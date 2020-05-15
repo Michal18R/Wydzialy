@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wydzialy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Dane_Wydzialy.xsd">
+
+  <Wydzial id="WYDZIAL_NR1">
+    <Nazwa>Wydział Historii</Nazwa>
+    <Adres>Uniwersytetu Poznańskiego 7</Adres>
+    <Adres>Kowalewskiego 3</Adres>
+	<Adres>Świetego Macieja 12</Adres>
+	<Adres>Koło Spodku 121</Adres>
+	
+    <Pracownicy id="PRACOWNICY_NR1">
+	
+      <Pracownik id="PRACOWNIK_NR1">
+        <Imie>Krzysztof</Imie>
+        <Nazwisko>Rodak</Nazwisko>
+        <Tytul>Doktor Habilitowany</Tytul>
+        <Kategoria>Naukowy</Kategoria>
+        <Adres-Pracownika>
+          <Ulica>Kolumba</Ulica>
+          <Numer-Ulicy>9</Numer-Ulicy>
+          <Kod-Pocztowy>61-444</Kod-Pocztowy>
+          <Miejscowosc>Poznań</Miejscowosc>
+        </Adres-Pracownika>
+      </Pracownik>
+	  
+      <Pracownik id="PRACOWNIK_NR2">
+        <Imie>Daniela</Imie>
+        <Nazwisko>Kubo</Nazwisko>
+        <Tytul>Inżynier</Tytul>
+        <Kategoria>Administracyjny</Kategoria>
+        <Adres-Pracownika>
+          <Ulica>Mickiewicza</Ulica>
+          <Numer-Ulicy>34</Numer-Ulicy>
+          <Kod-Pocztowy>61-440</Kod-Pocztowy>
+          <Miejscowosc>Poznań</Miejscowosc>
+        </Adres-Pracownika>
+      </Pracownik>
+	  
+	  <Pracownik id="PRACOWNIK_NR3">
+        <Imie>Karol</Imie>
+        <Nazwisko>Potrzebny</Nazwisko>
+        <Kategoria>Techniczny</Kategoria>
+        <Adres-Pracownika>
+          <Ulica>Peca</Ulica>
+          <Numer-Ulicy>4</Numer-Ulicy>
+          <Kod-Pocztowy>61-439</Kod-Pocztowy>
+          <Miejscowosc>Poznań</Miejscowosc>
+        </Adres-Pracownika>
+      </Pracownik>
+    
+	
+	<Pracownik id="PRACOWNIK_NR4">
+        <Imie>Robert</Imie>
+        <Nazwisko>Zimny</Nazwisko>
+        <Tytul>Doktor</Tytul>
+        <Kategoria>Naukowy</Kategoria>
+        <Adres-Pracownika>
+          <Ulica>Dąbrowskiego</Ulica>
+          <Numer-Ulicy>90</Numer-Ulicy>
+          <Kod-Pocztowy>61-428</Kod-Pocztowy>
+          <Miejscowosc>Poznań</Miejscowosc>
+        </Adres-Pracownika>
+      </Pracownik>
+	
+	</Pracownicy>
+    <Przedmioty>
+      <Przedmiot id="PRZEDMIOT_NR1">
+        <Nazwa>Historia Sztuki</Nazwa>
+        <Opis>Historia Sztuki od Średniowiecza po Renesans</Opis>
+		
+        <Zbior-Prowadzacych>
+          <Prowadzacy idref="PRACOWNIK_NR1" />
+        </Zbior-Prowadzacych>
+		
+        <Studenci>
+          <Student id="STUDENT_NR1">
+            <Imie-Studenta>Adam</Imie-Studenta>
+            <Nazwisko-Studenta>Pec</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439477</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR2">
+            <Imie-Studenta>Karol</Imie-Studenta>
+            <Nazwisko-Studenta>Lolek</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439478</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR3">
+            <Imie-Studenta>Karolina</Imie-Studenta>
+            <Nazwisko-Studenta>Man</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439479</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR4">
+            <Imie-Studenta>Ula</Imie-Studenta>
+            <Nazwisko-Studenta>Manien</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439480</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR5">
+            <Imie-Studenta>Tomek</Imie-Studenta>
+            <Nazwisko-Studenta>Kwal</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439481</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR6">
+            <Imie-Studenta>Michał</Imie-Studenta>
+            <Nazwisko-Studenta>Kwalowski</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439482</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR7">
+            <Imie-Studenta>Michał</Imie-Studenta>
+            <Nazwisko-Studenta>Pena</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439483</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR8">
+            <Imie-Studenta>Robert</Imie-Studenta>
+            <Nazwisko-Studenta>Tomyl</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439484</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR9">
+            <Imie-Studenta>Ziemowit</Imie-Studenta>
+            <Nazwisko-Studenta>Koko</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439485</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR10">
+            <Imie-Studenta>Zuzia</Imie-Studenta>
+            <Nazwisko-Studenta>Kokel</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439486</Numer-Indeksu-Studenta>
+          </Student>        
+        </Studenci>
+		
+      </Przedmiot>
+	  
+	  <Przedmiot id="PRZEDMIOT_NR2">
+        <Nazwa>Historia Matematyki</Nazwa>
+        <Opis>Nauka Podstaw Matematyki w różnych kulturach</Opis>
+		
+        <Zbior-Prowadzacych>
+          <Prowadzacy idref="PRACOWNIK_NR4" />
+        </Zbior-Prowadzacych>
+		
+        <Studenci>
+          <Student id="STUDENT_NR11">
+            <Imie-Studenta>Adama</Imie-Studenta>
+            <Nazwisko-Studenta>Peca</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439487</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR12">
+            <Imie-Studenta>Karola</Imie-Studenta>
+            <Nazwisko-Studenta>Loleka</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439488</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR13">
+            <Imie-Studenta>Karol</Imie-Studenta>
+            <Nazwisko-Studenta>Mana</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439489</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR14">
+            <Imie-Studenta>Ulek</Imie-Studenta>
+            <Nazwisko-Studenta>Manienka</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439490</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR15">
+            <Imie-Studenta>Tomek</Imie-Studenta>
+            <Nazwisko-Studenta>Kwalinski</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439491</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR16">
+            <Imie-Studenta>Michalina</Imie-Studenta>
+            <Nazwisko-Studenta>Kwalowska</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439492</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR17">
+            <Imie-Studenta>Michał</Imie-Studenta>
+            <Nazwisko-Studenta>Kowal</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439493</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		 </Studenci>
+      </Przedmiot>
+	  
+    </Przedmioty>
+  </Wydzial>
+  
+  <Wydzial id="WYDZIAL_NR2">
+    <Nazwa>Wydział Matematyki Stosowanej</Nazwa>
+    <Adres>Uniwersytetu Polańskiego 17</Adres>
+   
+    <Pracownicy id="PRACOWNICY_NR2">
+	
+      <Pracownik id="PRACOWNIK_NR5">
+        <Imie>Adam</Imie>
+        <Nazwisko>Rodak</Nazwisko>
+        <Tytul>Doktor Habilitowany</Tytul>
+        <Kategoria>Naukowy</Kategoria>
+        <Adres-Pracownika>
+          <Ulica>Kolumbijskiego</Ulica>
+          <Numer-Ulicy>18</Numer-Ulicy>
+          <Kod-Pocztowy>61-333</Kod-Pocztowy>
+          <Miejscowosc>Poznań</Miejscowosc>
+        </Adres-Pracownika>
+      </Pracownik>
+	  
+      <Pracownik id="PRACOWNIK_NR6">
+        <Imie>Daniel</Imie>
+        <Nazwisko>Kuborek</Nazwisko>
+        <Tytul>Inżynier</Tytul>
+        <Kategoria>Administracyjny</Kategoria>
+        <Adres-Pracownika>
+          <Ulica>Pecas</Ulica>
+          <Numer-Ulicy>134</Numer-Ulicy>
+          <Kod-Pocztowy>61-334</Kod-Pocztowy>
+          <Miejscowosc>Poznań</Miejscowosc>
+        </Adres-Pracownika>
+      </Pracownik>
+	  
+	  <Pracownik id="PRACOWNIK_NR7">
+        <Imie>Karolina</Imie>
+        <Nazwisko>Potrzebna</Nazwisko>
+        <Kategoria>Techniczny</Kategoria>
+        <Adres-Pracownika>
+          <Ulica>Kolanka</Ulica>
+          <Numer-Ulicy>224</Numer-Ulicy>
+          <Kod-Pocztowy>61-335</Kod-Pocztowy>
+          <Miejscowosc>Poznań</Miejscowosc>
+        </Adres-Pracownika>
+      </Pracownik>
+    
+	
+	<Pracownik id="PRACOWNIK_NR8">
+        <Imie>Roberta</Imie>
+        <Nazwisko>Zimna</Nazwisko>
+        <Tytul>Doktor</Tytul>
+        <Kategoria>Naukowy</Kategoria>
+        <Adres-Pracownika>
+          <Ulica>Dąbrowskiego</Ulica>
+          <Numer-Ulicy>190</Numer-Ulicy>
+          <Kod-Pocztowy>61-336</Kod-Pocztowy>
+          <Miejscowosc>Poznań</Miejscowosc>
+        </Adres-Pracownika>
+      </Pracownik>
+	  
+	  <Pracownik id="PRACOWNIK_NR9">
+        <Imie>Wacław</Imie>
+        <Nazwisko>Pierwszy</Nazwisko>
+        <Tytul>Doktor Habilitowany</Tytul>
+        <Kategoria>Naukowy</Kategoria>
+        <Adres-Pracownika>
+          <Ulica>Dąbrowskiego</Ulica>
+          <Numer-Ulicy>200</Numer-Ulicy>
+          <Kod-Pocztowy>61-337</Kod-Pocztowy>
+          <Miejscowosc>Poznań</Miejscowosc>
+        </Adres-Pracownika>
+      </Pracownik>
+	</Pracownicy>
+	
+    <Przedmioty>
+      <Przedmiot id="PRZEDMIOT_NR3">
+        <Nazwa>Podstawy Matematyki</Nazwa>
+        <Opis>Nauka podstaw Matematyki</Opis>
+		
+        <Zbior-Prowadzacych>
+          <Prowadzacy idref="PRACOWNIK_NR1" />
+		  <Prowadzacy idref="PRACOWNIK_NR5" />
+        </Zbior-Prowadzacych>
+		
+        <Studenci>
+          <Student id="STUDENT_NR18">
+            <Imie-Studenta>Adamiek</Imie-Studenta>
+            <Nazwisko-Studenta>Pecel</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439500</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR19">
+            <Imie-Studenta>Karolek</Imie-Studenta>
+            <Nazwisko-Studenta>Kok</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439501</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR20">
+            <Imie-Studenta>Mania</Imie-Studenta>
+            <Nazwisko-Studenta>Mucn</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439502</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR21">
+            <Imie-Studenta>Urszula</Imie-Studenta>
+            <Nazwisko-Studenta>Manienki</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439503</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR22">
+            <Imie-Studenta>Tomek</Imie-Studenta>
+            <Nazwisko-Studenta>Popek</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439504</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR23">
+            <Imie-Studenta>Michał</Imie-Studenta>
+            <Nazwisko-Studenta>Ren</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439505</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR24">
+            <Imie-Studenta>Michalina</Imie-Studenta>
+            <Nazwisko-Studenta>Penak</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439506</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR25">
+            <Imie-Studenta>Roberta</Imie-Studenta>
+            <Nazwisko-Studenta>Tomyla</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439507</Numer-Indeksu-Studenta>
+          </Student>       
+        </Studenci>
+		
+      </Przedmiot>
+	  
+      <Przedmiot id="PRZEDMIOT_NR4">
+        <Nazwa>Różniczki i Funkcje Złożone</Nazwa>
+        <Opis>Nauka stosowania Rożniczkowania i Funkcji Złożonych</Opis>
+		
+        <Zbior-Prowadzacych>
+          <Prowadzacy idref="PRACOWNIK_NR4" />
+        </Zbior-Prowadzacych>
+		
+        <Studenci>
+          <Student id="STUDENT_NR26">
+            <Imie-Studenta>Adam</Imie-Studenta>
+            <Nazwisko-Studenta>Kec</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439508</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR27">
+            <Imie-Studenta>Karol</Imie-Studenta>
+            <Nazwisko-Studenta>Lobieka</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439509</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR28">
+            <Imie-Studenta>Karolina</Imie-Studenta>
+            <Nazwisko-Studenta>Maniek</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439510</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR29">
+            <Imie-Studenta>Uleka</Imie-Studenta>
+            <Nazwisko-Studenta>Manienkawa</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439511</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR30">
+            <Imie-Studenta>Tomek</Imie-Studenta>
+            <Nazwisko-Studenta>Kwas</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439512</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR31">
+            <Imie-Studenta>Michalina</Imie-Studenta>
+            <Nazwisko-Studenta>Kwal</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439513</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR32">
+            <Imie-Studenta>Michał</Imie-Studenta>
+            <Nazwisko-Studenta>Kowalski</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439514</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		  <Student id="STUDENT_NR33">
+            <Imie-Studenta>Michał</Imie-Studenta>
+            <Nazwisko-Studenta>Kowalewski</Nazwisko-Studenta>
+			<Numer-Indeksu-Studenta>439515</Numer-Indeksu-Studenta>
+          </Student>
+		  
+		 </Studenci>
+      </Przedmiot>
+	  
+    </Przedmioty>
+  </Wydzial>
+  
+</Wydzialy>

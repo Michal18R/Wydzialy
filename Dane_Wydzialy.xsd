@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Wydzialy">
+  
+  <xs:complexType>
+    <xs:sequence>
+     <xs:element ref="Wydzial" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Wydzial">
+  
+  <xs:complexType>
+    <xs:sequence>
+     <xs:element name="Nazwa" minOccurs="1" maxOccurs="1" type="xs:string" />
+     <xs:element name="Adres" minOccurs="1" maxOccurs="unbounded" />
+     <xs:element ref="Pracownicy" />
+     <xs:element ref="Przedmioty" />
+     </xs:sequence>	
+    <xs:attribute name="id" use="required" type="xs:ID"/>	 
+  </xs:complexType>
+      
+  </xs:element>
+  
+  <xs:element name="Pracownicy">
+  
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="Pracownik" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="id" use="required" type="xs:ID"/>
+  </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Pracownik">
+  
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="Imie" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Nazwisko" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Tytul" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Kategoria" minOccurs="0" maxOccurs="3">
+		
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Naukowy"/>
+            <xs:enumeration value="Administracyjny"/>
+            <xs:enumeration value="Techniczny"/>
+          </xs:restriction>
+        </xs:simpleType>
+		  
+      </xs:element>
+      <xs:element ref="Adres-Pracownika" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:ID"/>
+        <xs:attribute name="idref" type="xs:IDREF" />
+    </xs:complexType>
+	
+  </xs:element>
+  
+  <xs:element name="Adres-Pracownika">
+  
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Ulica" type="xs:string" />
+        <xs:element name="Numer-Ulicy" type="xs:integer" />
+        <xs:element name="Kod-Pocztowy">
+		
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="6"/>
+              <xs:maxLength value="6"/>
+              <xs:pattern value="\d{2}-\d{3}"/>
+            </xs:restriction>
+          </xs:simpleType>
+		  
+        </xs:element>
+        <xs:element name="Miejscowosc" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+	
+  </xs:element>
+  
+  <xs:element name="Przedmioty">
+  
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Przedmiot" minOccurs="1" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>	
+  </xs:element>
+  
+  <xs:element name="Przedmiot">
+  
+  <xs:complexType>
+    <xs:all>
+      <xs:element name="Nazwa" type="xs:string" />
+      <xs:element name="Opis" type="xs:string" />
+      <xs:element name="Zbior-Prowadzacych">
+		
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="Prowadzacy" minOccurs="1" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+		  
+      </xs:element>
+		
+      <xs:element name="Studenci">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="Student" minOccurs="6" maxOccurs="400" />
+          </xs:sequence>
+        </xs:complexType>
+		  
+      </xs:element>
+		
+    </xs:all>
+	  
+    <xs:attribute name="id" use="required" type="xs:ID"/>
+    </xs:complexType>
+	
+  </xs:element>
+  
+  <xs:element name="Student">
+  
+  <xs:complexType>
+    <xs:all>
+      <xs:element name="Imie-Studenta" type="xs:string" />
+      <xs:element name="Nazwisko-Studenta" type="xs:string" />
+      <xs:element name="Numer-Indeksu-Studenta" type="xs:integer" /> 	  
+    </xs:all>
+    <xs:attribute name="id" use="required" type="xs:ID"/>
+  </xs:complexType>
+	
+  </xs:element>
+  
+  <xs:element name="Prowadzacy">
+  
+  <xs:complexType>
+      <xs:attribute name="idref" use="required" type="xs:IDREF" />
+  </xs:complexType>
+	
+  </xs:element>
+  
+</xs:schema>
